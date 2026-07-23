@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>A Systematic Process for Defining Meshing Tool Software Product Line Domain Model</title>
+  <meta name="description" content="Once an organization decides to develop a software product line (SPL), one of the first activities that needs to be done is to build a domain model. Here, commonalities and variabilities are identified, as well as the particular characteristics that products of the SPL will have. Although there exist some methods proposed for domain modeling, they are general and not specifically designed for scientific software, let alone for meshing tools. Meshing tools are highly complex software for generating and managing geometrical discretizations. Due to this complexity, they have generally been developed by end users with ad-hoc methodologies and not applying well established software engineering practices. Nevertheless, many meshing tools with varying degrees of variability have been developed over the years, making them a good application domain for SPL. This paper proposes a systematic process for building the domain model, specially suited for the case of a meshing tool SPL. We formally define the structure of the domain model, the process for building this model in a rigorous way, and we apply it to produce a meshing tool domain model. Both, the model and the process, are described and exemplified along the paper.">
+  <link rel="canonical" href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER09/wer200912.html">
+  <link rel="stylesheet" href="../../assets/styles.css?v=fd47472719fc">
+  <meta name="citation_title" content="A Systematic Process for Defining Meshing Tool Software Product Line Domain Model">
+  <meta name="citation_author" content="Pedro O. Rossel">
+  <meta name="citation_author" content="María Cecilia Bastarrica">
+  <meta name="citation_author" content="Nancy Hitschfeld-Kahler">
+  <meta name="citation_publication_date" content="2009/07/16">
+  <meta name="citation_conference_title" content="Workshop on Requirements Engineering (WER)">
+  <meta name="citation_issn" content="2675-0066">
+  <meta name="citation_isbn" content="978-956-319-941-3">
+  <meta name="citation_abstract" content="Once an organization decides to develop a software product line (SPL), one of the first activities that needs to be done is to build a domain model. Here, commonalities and variabilities are identified, as well as the particular characteristics that products of the SPL will have. Although there exist some methods proposed for domain modeling, they are general and not specifically designed for scientific software, let alone for meshing tools. Meshing tools are highly complex software for generating and managing geometrical discretizations. Due to this complexity, they have generally been developed by end users with ad-hoc methodologies and not applying well established software engineering practices. Nevertheless, many meshing tools with varying degrees of variability have been developed over the years, making them a good application domain for SPL. This paper proposes a systematic process for building the domain model, specially suited for the case of a meshing tool SPL. We formally define the structure of the domain model, the process for building this model in a rigorous way, and we apply it to produce a meshing tool domain model. Both, the model and the process, are described and exemplified along the paper.">
+  <meta name="citation_pdf_url" content="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER09/rossel.pdf">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "A Systematic Process for Defining Meshing Tool Software Product Line Domain Model", "description": "Once an organization decides to develop a software product line (SPL), one of the first activities that needs to be done is to build a domain model. Here, commonalities and variabilities are identified, as well as the particular characteristics that products of the SPL will have. Although there exist some methods proposed for domain modeling, they are general and not specifically designed for scientific software, let alone for meshing tools. Meshing tools are highly complex software for generating and managing geometrical discretizations. Due to this complexity, they have generally been developed by end users with ad-hoc methodologies and not applying well established software engineering practices. Nevertheless, many meshing tools with varying degrees of variability have been developed over the years, making them a good application domain for SPL. This paper proposes a systematic process for building the domain model, specially suited for the case of a meshing tool SPL. We formally define the structure of the domain model, the process for building this model in a rigorous way, and we apply it to produce a meshing tool domain model. Both, the model and the process, are described and exemplified along the paper.", "author": [{"@type": "Person", "name": "Pedro O. Rossel"}, {"@type": "Person", "name": "María Cecilia Bastarrica"}, {"@type": "Person", "name": "Nancy Hitschfeld-Kahler"}], "datePublished": "2009/07/16", "isPartOf": {"@type": "PublicationEvent", "name": "Workshop on Requirements Engineering (WER)"}, "identifier": "wer200912", "url": "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER09/wer200912.html", "encoding": {"@type": "MediaObject", "contentUrl": "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER09/rossel.pdf", "encodingFormat": "application/pdf"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="WERpapers"><img src="../../assets/logo-werpapers-restored.webp?v=fd47472719fc" width="1493" height="1054" alt="WERpapers"></a>
+    <div class="header-tools">
+      <nav aria-label="Principal"><a href="../../index.html" data-i18n="nav.home">Inicio</a><a href="../../anais.html" data-i18n="nav.anais">Anais</a><a href="../../index.html#ediciones" data-i18n="nav.editions">Ediciones</a><a href="../../historia.html" data-i18n="nav.history">Historia</a><a href="../../index.html#buscar" data-i18n="nav.search">Buscar</a></nav>
+      <div class="language-switcher" role="group" aria-label="Idioma"><button type="button" data-lang="pt">PT</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button></div>
+    </div>
+  </header>
+  <main id="main">
+<article class="paper">
+  <p class="eyebrow">Traceability and Product Lines · WER2009</p>
+  <h1 class="citation_title">A Systematic Process for Defining Meshing Tool Software Product Line Domain Model</h1>
+  <p class="authors citation_author">Pedro O. Rossel; María Cecilia Bastarrica; Nancy Hitschfeld-Kahler</p>
+  <div class="paper-meta"><span data-conference-title>Workshop on Requirements Engineering (WER)</span><span>2009</span></div>
+  <p class="actions"><a class="button" href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER09/rossel.pdf" data-i18n="paper.readPdf">Leer PDF</a><a class="button secondary" href="index.html" data-i18n="paper.viewEdition">Ver edición</a><a class="button secondary" href="https://scholar.google.com/scholar?q=%22A%20Systematic%20Process%20for%20Defining%20Meshing%20Tool%20Software%20Product%20Line%20Domain%20Model%22" target="_blank" rel="noopener" data-i18n="paper.scholar">Google Scholar</a></p>
+  <section aria-labelledby="abstract-heading"><h2 id="abstract-heading" data-i18n="paper.abstract">Resumen</h2><p class="abstract">Once an organization decides to develop a software product line (SPL), one of the first activities that needs to be done is to build a domain model. Here, commonalities and variabilities are identified, as well as the particular characteristics that products of the SPL will have. Although there exist some methods proposed for domain modeling, they are general and not specifically designed for scientific software, let alone for meshing tools. Meshing tools are highly complex software for generating and managing geometrical discretizations. Due to this complexity, they have generally been developed by end users with ad-hoc methodologies and not applying well established software engineering practices. Nevertheless, many meshing tools with varying degrees of variability have been developed over the years, making them a good application domain for SPL. This paper proposes a systematic process for building the domain model, specially suited for the case of a meshing tool SPL. We formally define the structure of the domain model, the process for building this model in a rigorous way, and we apply it to produce a meshing tool domain model. Both, the model and the process, are described and exemplified along the paper.</p></section>
+  
+  <details><summary data-i18n="paper.cite">Cómo citar</summary><pre><code>@inproceedings{wer200912,
+  author = {Rossel, P. O. and Bastarrica, M. C. and Hitschfeld-Kahler, N.},
+  title = {A Systematic Process for Defining Meshing Tool Software Product Line Domain Model},
+  booktitle = {Anais do Workshop em Engenharia de Requisitos - Proceedings of the 12th Workshop on Requirements Engineering (WER2009)},
+  year = {2009},
+  issn = {2675-0066},
+  isbn = {978-956-319-941-3},
+  doi = {}
+}</code></pre></details>
+</article></main>
+  <footer><p>WERpapers · Workshop on Requirements Engineering · ISSN 2675-0066</p><p data-i18n="footer.description">Repositorio académico de acceso abierto mantenido como colección estática.</p><p><a href="https://dblp.org/db/conf/wer/index.html" target="_blank" rel="external noopener" data-i18n="footer.dblp">WER en DBLP</a></p></footer>
+  <script src="../../assets/i18n.js?v=fd47472719fc" defer></script>
+  <script src="../../assets/search-index.js?v=fd47472719fc" defer></script>
+  <script src="../../assets/search.js?v=fd47472719fc" defer></script>
+</body>
+</html>

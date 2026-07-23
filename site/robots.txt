@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://wer.inf.puc-rio.br/WERpapers/sitemap.xml

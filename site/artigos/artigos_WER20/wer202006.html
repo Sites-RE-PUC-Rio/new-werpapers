@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Hacia la Evaluación Automática de la Calidad de los Requerimientos de Software usando Redes Neuronales Long Short Term Memory</title>
+  <meta name="description" content="El primer paso para obtener un producto de software de calidad es abordar la calidad de los requerimientos. Dado que los requerimientos estan escritos en lenguaje natural, la flexibilidad y las caracteristicas propias del lenguaje pueden conducir a errores durante su especificacion y, en consecuencia, esto puede influir negativamente en fases posteriores del ciclo de vida del software. Por esta razon, en este articulo se propone un enfoque innovador que combina tecnicas de procesamiento del lenguaje natural y redes neuronales, especificamente redes neuronales recurrentes LSTM, para predecir la calidad textual de los requerimientos. Inicialmente, se aborda el analisis de la propiedad de calidad singular definida en el estandar ISO/IEC/IEEE 29148: 2018. El modelo neuronal propuesto es entrenado con un conjunto de datos que incluye 1000 requerimientos. Cada requerimiento es sometido a un proceso de tokenizacion y etiquetado gramatical, con el fin de obtener una secuencia representativa que actue de entrada al modelo neuronal. La propuesta proporciona resultados prometedores con un alto nivel de precision, lo que motiva explorar su aplicacion en la evaluacion de otras propiedades de calidad.">
+  <link rel="canonical" href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER20/wer202006.html">
+  <link rel="stylesheet" href="../../assets/styles.css?v=fd47472719fc">
+  <meta name="citation_title" content="Hacia la Evaluación Automática de la Calidad de los Requerimientos de Software usando Redes Neuronales Long Short Term Memory">
+  <meta name="citation_author" content="María Guadalupe Gramajo">
+  <meta name="citation_author" content="Luciana Ballejos">
+  <meta name="citation_author" content="Mariel Ale">
+  <meta name="citation_publication_date" content="2020/08/24">
+  <meta name="citation_conference_title" content="Workshop on Requirements Engineering (WER)">
+  <meta name="citation_issn" content="2675-0066">
+  <meta name="citation_isbn" content="978-65-00-73318-1">
+  <meta name="citation_doi" content="10.29327/1298730.23-6">
+  <meta name="citation_abstract" content="El primer paso para obtener un producto de software de calidad es abordar la calidad de los requerimientos. Dado que los requerimientos estan escritos en lenguaje natural, la flexibilidad y las caracteristicas propias del lenguaje pueden conducir a errores durante su especificacion y, en consecuencia, esto puede influir negativamente en fases posteriores del ciclo de vida del software. Por esta razon, en este articulo se propone un enfoque innovador que combina tecnicas de procesamiento del lenguaje natural y redes neuronales, especificamente redes neuronales recurrentes LSTM, para predecir la calidad textual de los requerimientos. Inicialmente, se aborda el analisis de la propiedad de calidad singular definida en el estandar ISO/IEC/IEEE 29148: 2018. El modelo neuronal propuesto es entrenado con un conjunto de datos que incluye 1000 requerimientos. Cada requerimiento es sometido a un proceso de tokenizacion y etiquetado gramatical, con el fin de obtener una secuencia representativa que actue de entrada al modelo neuronal. La propuesta proporciona resultados prometedores con un alto nivel de precision, lo que motiva explorar su aplicacion en la evaluacion de otras propiedades de calidad.">
+  <meta name="citation_pdf_url" content="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER20/05_WER_2020_paper_33.pdf">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Hacia la Evaluación Automática de la Calidad de los Requerimientos de Software usando Redes Neuronales Long Short Term Memory", "description": "El primer paso para obtener un producto de software de calidad es abordar la calidad de los requerimientos. Dado que los requerimientos estan escritos en lenguaje natural, la flexibilidad y las caracteristicas propias del lenguaje pueden conducir a errores durante su especificacion y, en consecuencia, esto puede influir negativamente en fases posteriores del ciclo de vida del software. Por esta razon, en este articulo se propone un enfoque innovador que combina tecnicas de procesamiento del lenguaje natural y redes neuronales, especificamente redes neuronales recurrentes LSTM, para predecir la calidad textual de los requerimientos. Inicialmente, se aborda el analisis de la propiedad de calidad singular definida en el estandar ISO/IEC/IEEE 29148: 2018. El modelo neuronal propuesto es entrenado con un conjunto de datos que incluye 1000 requerimientos. Cada requerimiento es sometido a un proceso de tokenizacion y etiquetado gramatical, con el fin de obtener una secuencia representativa que actue de entrada al modelo neuronal. La propuesta proporciona resultados prometedores con un alto nivel de precision, lo que motiva explorar su aplicacion en la evaluacion de otras propiedades de calidad.", "author": [{"@type": "Person", "name": "María Guadalupe Gramajo"}, {"@type": "Person", "name": "Luciana Ballejos"}, {"@type": "Person", "name": "Mariel Ale"}], "datePublished": "2020/08/24", "isPartOf": {"@type": "PublicationEvent", "name": "Workshop on Requirements Engineering (WER)"}, "identifier": "10.29327/1298730.23-6", "url": "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER20/wer202006.html", "encoding": {"@type": "MediaObject", "contentUrl": "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER20/05_WER_2020_paper_33.pdf", "encodingFormat": "application/pdf"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="WERpapers"><img src="../../assets/logo-werpapers-restored.webp?v=fd47472719fc" width="1493" height="1054" alt="WERpapers"></a>
+    <div class="header-tools">
+      <nav aria-label="Principal"><a href="../../index.html" data-i18n="nav.home">Inicio</a><a href="../../anais.html" data-i18n="nav.anais">Anais</a><a href="../../index.html#ediciones" data-i18n="nav.editions">Ediciones</a><a href="../../historia.html" data-i18n="nav.history">Historia</a><a href="../../index.html#buscar" data-i18n="nav.search">Buscar</a></nav>
+      <div class="language-switcher" role="group" aria-label="Idioma"><button type="button" data-lang="pt">PT</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button></div>
+    </div>
+  </header>
+  <main id="main">
+<article class="paper">
+  <p class="eyebrow">Papers · WER2020</p>
+  <h1 class="citation_title">Hacia la Evaluación Automática de la Calidad de los Requerimientos de Software usando Redes Neuronales Long Short Term Memory</h1>
+  <p class="authors citation_author">María Guadalupe Gramajo; Luciana Ballejos; Mariel Ale</p>
+  <div class="paper-meta"><span data-conference-title>Workshop on Requirements Engineering (WER)</span><span>2020</span><a href="https://doi.org/10.29327/1298730.23-6">DOI 10.29327/1298730.23-6</a></div>
+  <p class="actions"><a class="button" href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER20/05_WER_2020_paper_33.pdf" data-i18n="paper.readPdf">Leer PDF</a><a class="button secondary" href="index.html" data-i18n="paper.viewEdition">Ver edición</a><a class="button secondary" href="https://scholar.google.com/scholar?q=%22Hacia%20la%20Evaluaci%C3%B3n%20Autom%C3%A1tica%20de%20la%20Calidad%20de%20los%20Requerimientos%20de%20Software%20usando%20Redes%20Neuronales%20Long%20Short%20Term%20Memory%22" target="_blank" rel="noopener" data-i18n="paper.scholar">Google Scholar</a></p>
+  <section aria-labelledby="abstract-heading"><h2 id="abstract-heading" data-i18n="paper.abstract">Resumen</h2><p class="abstract">El primer paso para obtener un producto de software de calidad es abordar la calidad de los requerimientos. Dado que los requerimientos estan escritos en lenguaje natural, la flexibilidad y las caracteristicas propias del lenguaje pueden conducir a errores durante su especificacion y, en consecuencia, esto puede influir negativamente en fases posteriores del ciclo de vida del software. Por esta razon, en este articulo se propone un enfoque innovador que combina tecnicas de procesamiento del lenguaje natural y redes neuronales, especificamente redes neuronales recurrentes LSTM, para predecir la calidad textual de los requerimientos. Inicialmente, se aborda el analisis de la propiedad de calidad singular definida en el estandar ISO/IEC/IEEE 29148: 2018. El modelo neuronal propuesto es entrenado con un conjunto de datos que incluye 1000 requerimientos. Cada requerimiento es sometido a un proceso de tokenizacion y etiquetado gramatical, con el fin de obtener una secuencia representativa que actue de entrada al modelo neuronal. La propuesta proporciona resultados prometedores con un alto nivel de precision, lo que motiva explorar su aplicacion en la evaluacion de otras propiedades de calidad.</p></section>
+  <section><h2 data-i18n="paper.keywords">Palabras clave</h2><p>Requirements Engineering; Deep Learning; Long Short Term Memory</p></section>
+  <details><summary data-i18n="paper.cite">Cómo citar</summary><pre><code>@inproceedings{wer202006,
+  author = {Gramajo, M. G. and Ballejos, L. and Ale, M.},
+  title = {Hacia la Evaluación Automática de la Calidad de los Requerimientos de Software usando Redes Neuronales Long Short Term Memory},
+  booktitle = {Anais do Workshop em Engenharia de Requisitos - Proceedings of the 23rd Workshop on Requirements Engineering (WER2020)},
+  year = {2020},
+  issn = {2675-0066},
+  isbn = {978-65-00-73318-1},
+  doi = {10.29327/1298730.23-6}
+}</code></pre></details>
+</article></main>
+  <footer><p>WERpapers · Workshop on Requirements Engineering · ISSN 2675-0066</p><p data-i18n="footer.description">Repositorio académico de acceso abierto mantenido como colección estática.</p><p><a href="https://dblp.org/db/conf/wer/index.html" target="_blank" rel="external noopener" data-i18n="footer.dblp">WER en DBLP</a></p></footer>
+  <script src="../../assets/i18n.js?v=fd47472719fc" defer></script>
+  <script src="../../assets/search-index.js?v=fd47472719fc" defer></script>
+  <script src="../../assets/search.js?v=fd47472719fc" defer></script>
+</body>
+</html>

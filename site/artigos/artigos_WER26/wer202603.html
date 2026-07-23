@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Guías para mejorar la calidad de especificaciones de requerimientos en lenguaje natural</title>
+  <meta name="description" content="La calidad de los requerimientos impacta directamente en el desarrollo del software. Una especificación ambigua o incompleta puede generar un costo de retrabajo para corregir código incorrecto de entre 100 y 200 veces el esfuerzo invertido en especificar requerimientos. El lenguaje natural es el más utilizado para especificar requerimientos dado que los requerimientos es el medio de comunicación entre los usuarios y el equipo de desarrollo. Ahora bien, es común encontrar diferentes defectos en especificaciones de lenguaje natural tales como: ambigüedad, falta de precisión, redundancia, etc. La detección de estos defectos es muy útil, dado que permite reducir el retrabajo por errores. Este artículo tiene por objetivo presentar una serie de guías para revisar ciertos aspectos de oraciones escritas en lenguaje natural con el fin de mejorar la calidad de las mismas. Si bien las guías pueden ser consideradas como una lista de chequeo para el ingeniero de requerimientos, este artículo también muestra una herramienta que utiliza Inteligencia Artificial y que implementa servicios para que las revisiones puedan ser reutilizables por otra aplicaciones.">
+  <link rel="canonical" href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER26/wer202603.html">
+  <link rel="stylesheet" href="../../assets/styles.css?v=fd47472719fc">
+  <meta name="citation_title" content="Guías para mejorar la calidad de especificaciones de requerimientos en lenguaje natural">
+  <meta name="citation_author" content="Nicolás Simón Ruffolo">
+  <meta name="citation_author" content="Giuliana Maltempo">
+  <meta name="citation_author" content="Juliana Ailen Delle Ville">
+  <meta name="citation_author" content="Carlos Carden">
+  <meta name="citation_author" content="Elías Roa">
+  <meta name="citation_author" content="Enzo Giandon">
+  <meta name="citation_author" content="Gregorio Ponce">
+  <meta name="citation_author" content="Juan Escudero">
+  <meta name="citation_author" content="Juan Ignacio Glassman">
+  <meta name="citation_author" content="Martina Hübler">
+  <meta name="citation_author" content="Mauricio Rodríguez Ricon">
+  <meta name="citation_author" content="Sebastián Diaz">
+  <meta name="citation_author" content="Sofía Celano">
+  <meta name="citation_author" content="Carlos Nusch">
+  <meta name="citation_author" content="Gabriela Perez">
+  <meta name="citation_author" content="Leandro Antonelli">
+  <meta name="citation_publication_date" content="2026/08/10">
+  <meta name="citation_conference_title" content="Workshop on Requirements Engineering (WER)">
+  <meta name="citation_issn" content="2675-0066">
+  <meta name="citation_isbn" content="978-65-02-19591-8">
+  <meta name="citation_abstract" content="La calidad de los requerimientos impacta directamente en el desarrollo del software. Una especificación ambigua o incompleta puede generar un costo de retrabajo para corregir código incorrecto de entre 100 y 200 veces el esfuerzo invertido en especificar requerimientos. El lenguaje natural es el más utilizado para especificar requerimientos dado que los requerimientos es el medio de comunicación entre los usuarios y el equipo de desarrollo. Ahora bien, es común encontrar diferentes defectos en especificaciones de lenguaje natural tales como: ambigüedad, falta de precisión, redundancia, etc. La detección de estos defectos es muy útil, dado que permite reducir el retrabajo por errores. Este artículo tiene por objetivo presentar una serie de guías para revisar ciertos aspectos de oraciones escritas en lenguaje natural con el fin de mejorar la calidad de las mismas. Si bien las guías pueden ser consideradas como una lista de chequeo para el ingeniero de requerimientos, este artículo también muestra una herramienta que utiliza Inteligencia Artificial y que implementa servicios para que las revisiones puedan ser reutilizables por otra aplicaciones.">
+  <meta name="citation_pdf_url" content="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER26/wer202603.pdf">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Guías para mejorar la calidad de especificaciones de requerimientos en lenguaje natural", "description": "La calidad de los requerimientos impacta directamente en el desarrollo del software. Una especificación ambigua o incompleta puede generar un costo de retrabajo para corregir código incorrecto de entre 100 y 200 veces el esfuerzo invertido en especificar requerimientos. El lenguaje natural es el más utilizado para especificar requerimientos dado que los requerimientos es el medio de comunicación entre los usuarios y el equipo de desarrollo. Ahora bien, es común encontrar diferentes defectos en especificaciones de lenguaje natural tales como: ambigüedad, falta de precisión, redundancia, etc. La detección de estos defectos es muy útil, dado que permite reducir el retrabajo por errores. Este artículo tiene por objetivo presentar una serie de guías para revisar ciertos aspectos de oraciones escritas en lenguaje natural con el fin de mejorar la calidad de las mismas. Si bien las guías pueden ser consideradas como una lista de chequeo para el ingeniero de requerimientos, este artículo también muestra una herramienta que utiliza Inteligencia Artificial y que implementa servicios para que las revisiones puedan ser reutilizables por otra aplicaciones.", "author": [{"@type": "Person", "name": "Nicolás Simón Ruffolo"}, {"@type": "Person", "name": "Giuliana Maltempo"}, {"@type": "Person", "name": "Juliana Ailen Delle Ville"}, {"@type": "Person", "name": "Carlos Carden"}, {"@type": "Person", "name": "Elías Roa"}, {"@type": "Person", "name": "Enzo Giandon"}, {"@type": "Person", "name": "Gregorio Ponce"}, {"@type": "Person", "name": "Juan Escudero"}, {"@type": "Person", "name": "Juan Ignacio Glassman"}, {"@type": "Person", "name": "Martina Hübler"}, {"@type": "Person", "name": "Mauricio Rodríguez Ricon"}, {"@type": "Person", "name": "Sebastián Diaz"}, {"@type": "Person", "name": "Sofía Celano"}, {"@type": "Person", "name": "Carlos Nusch"}, {"@type": "Person", "name": "Gabriela Perez"}, {"@type": "Person", "name": "Leandro Antonelli"}], "datePublished": "2026/08/10", "isPartOf": {"@type": "PublicationEvent", "name": "Workshop on Requirements Engineering (WER)"}, "identifier": "wer202603", "url": "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER26/wer202603.html", "encoding": {"@type": "MediaObject", "contentUrl": "http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER26/wer202603.pdf", "encodingFormat": "application/pdf"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="WERpapers"><img src="../../assets/logo-werpapers-restored.webp?v=fd47472719fc" width="1493" height="1054" alt="WERpapers"></a>
+    <div class="header-tools">
+      <nav aria-label="Principal"><a href="../../index.html" data-i18n="nav.home">Inicio</a><a href="../../anais.html" data-i18n="nav.anais">Anais</a><a href="../../index.html#ediciones" data-i18n="nav.editions">Ediciones</a><a href="../../historia.html" data-i18n="nav.history">Historia</a><a href="../../index.html#buscar" data-i18n="nav.search">Buscar</a></nav>
+      <div class="language-switcher" role="group" aria-label="Idioma"><button type="button" data-lang="pt">PT</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button></div>
+    </div>
+  </header>
+  <main id="main">
+<article class="paper">
+  <p class="eyebrow">Research Track · WER2026</p>
+  <h1 class="citation_title">Guías para mejorar la calidad de especificaciones de requerimientos en lenguaje natural</h1>
+  <p class="authors citation_author">Nicolás Simón Ruffolo; Giuliana Maltempo; Juliana Ailen Delle Ville; Carlos Carden; Elías Roa; Enzo Giandon; Gregorio Ponce; Juan Escudero; Juan Ignacio Glassman; Martina Hübler; Mauricio Rodríguez Ricon; Sebastián Diaz; Sofía Celano; Carlos Nusch; Gabriela Perez; Leandro Antonelli</p>
+  <div class="paper-meta"><span data-conference-title>Workshop on Requirements Engineering (WER)</span><span>2026</span></div>
+  <p class="actions"><a class="button" href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER26/wer202603.pdf" data-i18n="paper.readPdf">Leer PDF</a><a class="button secondary" href="index.html" data-i18n="paper.viewEdition">Ver edición</a><a class="button secondary" href="https://scholar.google.com/scholar?q=%22Gu%C3%ADas%20para%20mejorar%20la%20calidad%20de%20especificaciones%20de%20requerimientos%20en%20lenguaje%20natural%22" target="_blank" rel="noopener" data-i18n="paper.scholar">Google Scholar</a></p>
+  <section aria-labelledby="abstract-heading"><h2 id="abstract-heading" data-i18n="paper.abstract">Resumen</h2><p class="abstract">La calidad de los requerimientos impacta directamente en el desarrollo del software. Una especificación ambigua o incompleta puede generar un costo de retrabajo para corregir código incorrecto de entre 100 y 200 veces el esfuerzo invertido en especificar requerimientos. El lenguaje natural es el más utilizado para especificar requerimientos dado que los requerimientos es el medio de comunicación entre los usuarios y el equipo de desarrollo. Ahora bien, es común encontrar diferentes defectos en especificaciones de lenguaje natural tales como: ambigüedad, falta de precisión, redundancia, etc. La detección de estos defectos es muy útil, dado que permite reducir el retrabajo por errores. Este artículo tiene por objetivo presentar una serie de guías para revisar ciertos aspectos de oraciones escritas en lenguaje natural con el fin de mejorar la calidad de las mismas. Si bien las guías pueden ser consideradas como una lista de chequeo para el ingeniero de requerimientos, este artículo también muestra una herramienta que utiliza Inteligencia Artificial y que implementa servicios para que las revisiones puedan ser reutilizables por otra aplicaciones.</p></section>
+  <section><h2 data-i18n="paper.keywords">Palabras clave</h2><p>Calidad en Especificaciones; Procesamiento de Lenguaje Natural; Especificaciones Semiestructuradas</p></section>
+  <details><summary data-i18n="paper.cite">Cómo citar</summary><pre><code>@inproceedings{wer202603,
+  author = {Ruffolo, N. S. and Maltempo, G. and Ville, J. A. D. and Carden, C. and Roa, E. and Giandon, E. and Ponce, G. and Escudero, J. and Glassman, J. I. and Hübler, M. and Ricon, M. R. and Diaz, S. and Celano, S. and Nusch, C. and Perez, G. and Antonelli, L.},
+  title = {Guías para mejorar la calidad de especificaciones de requerimientos en lenguaje natural},
+  booktitle = {Anais do Workshop em Engenharia de Requisitos - Proceedings of the 29th Workshop on Requirements Engineering (WER2026)},
+  year = {2026},
+  issn = {2675-0066},
+  isbn = {978-65-02-19591-8},
+  doi = {}
+}</code></pre></details>
+</article></main>
+  <footer><p>WERpapers · Workshop on Requirements Engineering · ISSN 2675-0066</p><p data-i18n="footer.description">Repositorio académico de acceso abierto mantenido como colección estática.</p><p><a href="https://dblp.org/db/conf/wer/index.html" target="_blank" rel="external noopener" data-i18n="footer.dblp">WER en DBLP</a></p></footer>
+  <script src="../../assets/i18n.js?v=fd47472719fc" defer></script>
+  <script src="../../assets/search-index.js?v=fd47472719fc" defer></script>
+  <script src="../../assets/search.js?v=fd47472719fc" defer></script>
+</body>
+</html>
